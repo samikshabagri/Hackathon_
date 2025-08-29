@@ -1,0 +1,290 @@
+{
+  "test_date": "2025-08-29T20:37:39.892348",
+  "total_requests": 12213,
+  "correct_decisions": 8205,
+  "accuracy": 67.1825104396954,
+  "attack_stats": {
+    "Normal": {
+      "correct": 6335,
+      "total": 7148
+    },
+    "Attack": {
+      "correct": 1870,
+      "total": 5065
+    }
+  },
+  "sample_results": [
+    {
+      "url": "http://localhost:8080/tienda1/publico/caracteristicas.jsp?id=2 HTTP/1.1",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": true,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/miembros/imagenes/castro.jpg HTTP/1.1",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": true,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/registro.jsp?modo=registro&login=tejani&password=arable&nombre...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "confidence": 0.9,
+      "correct": true,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/miembros/editar.jsp?modo=registro&login=gargulak&password=Bu7c2Pi%E9&n...",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "BLOCK",
+      "confidence": 0.9,
+      "correct": false,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/autenticar.jsp?modo=entrar&login=bienek&pwd=cloqu%27e%2Fro&rem...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.30000000000000004,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/anadir.jsp HTTP/1.1",
+      "method": "POST",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.4,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/entrar.jsp?errorMsg=Credenciales+incorrectas%27%29%3Bwaitfor+d...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "confidence": 0.85,
+      "correct": true,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/vaciar.jsp?B2=any%250ASet-cookie%253A%2BTamper%253D10412640110...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.5,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1.bak HTTP/1.1",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/registro.jsp?modo=registro&login=majd&password=any%250D%250ASe...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "BLOCK",
+      "confidence": 0.9,
+      "correct": true,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/miembros/imagenes/castro.jpg HTTP/1.1",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": true,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/miembros/imagenes/zarauz.jpg HTTP/1.1",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": true,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/anadir.jsp?id=2&nombre=Vino+Rioja&precio=85%7C&cantidad=67&B1=...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/registro.jsp?modo=registro&login=peiser&password=9iri7aza&nomb...",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "BLOCK",
+      "confidence": 0.9,
+      "correct": false,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/pagar.jsp?modo=insertar&precioA=8659&B1=Pasar+por+caja HTTP/1....",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/pagar.jsp?modo=insertar&precio=6840&B1=Pasar+por+caja%2F HTTP/...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/vaciar.jsp HTTP/1.1",
+      "method": "POST",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/global.OLD HTTP/1.1",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/entrar.jsp HTTP/1.1",
+      "method": "POST",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/busytime.nsf HTTP/1.1",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    }
+  ],
+  "error_examples": [
+    {
+      "url": "http://localhost:8080/tienda1/miembros/editar.jsp?modo=registro&login=gargulak&password=Bu7c2Pi%E9&n...",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "BLOCK",
+      "confidence": 0.9,
+      "correct": false,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/autenticar.jsp?modo=entrar&login=bienek&pwd=cloqu%27e%2Fro&rem...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.30000000000000004,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/anadir.jsp HTTP/1.1",
+      "method": "POST",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.4,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/vaciar.jsp?B2=any%250ASet-cookie%253A%2BTamper%253D10412640110...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.5,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1.bak HTTP/1.1",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/anadir.jsp?id=2&nombre=Vino+Rioja&precio=85%7C&cantidad=67&B1=...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/registro.jsp?modo=registro&login=peiser&password=9iri7aza&nomb...",
+      "method": "GET",
+      "expected": "ALLOW",
+      "decision": "BLOCK",
+      "confidence": 0.9,
+      "correct": false,
+      "true_label": 0
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/pagar.jsp?modo=insertar&precioA=8659&B1=Pasar+por+caja HTTP/1....",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/pagar.jsp?modo=insertar&precio=6840&B1=Pasar+por+caja%2F HTTP/...",
+      "method": "GET",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    },
+    {
+      "url": "http://localhost:8080/tienda1/publico/vaciar.jsp HTTP/1.1",
+      "method": "POST",
+      "expected": "BLOCK",
+      "decision": "ALLOW",
+      "confidence": 0.2,
+      "correct": false,
+      "true_label": 1
+    }
+  ]
+}

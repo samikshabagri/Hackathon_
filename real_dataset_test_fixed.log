@@ -1,0 +1,170 @@
+2025-08-29 20:37:22,611 - INFO - ================================================================================
+2025-08-29 20:37:22,611 - INFO - STARTING REAL DATASET WAF TESTING - FIXED VERSION
+2025-08-29 20:37:22,612 - INFO - ================================================================================
+2025-08-29 20:37:22,612 - INFO - Loading CSIC 2010 dataset...
+2025-08-29 20:37:22,811 - INFO - Dataset shape: (61065, 17)
+2025-08-29 20:37:22,814 - INFO - Target distribution: classification
+0    36000
+1    25065
+Name: count, dtype: int64
+2025-08-29 20:37:22,814 - INFO - Extracting features from real dataset...
+2025-08-29 20:37:22,908 - INFO - Splitting data for testing...
+2025-08-29 20:37:22,916 - INFO - Test dataset size: 12213
+2025-08-29 20:37:22,917 - INFO - Testing WAF on real dataset...
+2025-08-29 20:37:23,022 - INFO - Request 39700: GET http://localhost:8080/asf-logo-wide.gif HTTP/1.1... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:23,146 - INFO - Processed 58000/12213 requests...
+2025-08-29 20:37:23,148 - INFO - Request 58000: GET http://localhost:8080/tienda1/publico/autenticar.j... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:23,406 - INFO - Request 17700: GET http://localhost:8080/tienda1/miembros/imagenes/za... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:23,425 - INFO - Request 50400: POST http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:23,451 - INFO - Request 9100: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:23,529 - INFO - Request 53800: GET http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:23,651 - INFO - Request 28300: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:23,763 - INFO - Request 29500: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:23,892 - INFO - Request 34900: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:23,896 - INFO - Request 4800: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:23,945 - INFO - Request 37400: POST http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:24,030 - INFO - Processed 35000/12213 requests...
+2025-08-29 20:37:24,031 - INFO - Request 35000: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:24,075 - INFO - Request 52100: GET http://localhost:8080/tienda1/publico/autenticar.j... | Expected: BLOCK | Got: ALLOW | Confidence: 0.300 | ❌
+2025-08-29 20:37:24,146 - INFO - Request 32200: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:24,206 - INFO - Request 37100: GET http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:24,331 - INFO - Request 59200: GET http://localhost:8080/tienda1/miembros/editar.jsp?... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:24,453 - INFO - Request 54900: GET http://localhost:8080/tienda1/publico/caracteristi... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:24,457 - INFO - Processed 37000/12213 requests...
+2025-08-29 20:37:24,457 - INFO - Request 37000: GET http://localhost:8080/tienda1/miembros/editar.jsp?... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:24,481 - INFO - Request 27600: GET http://localhost:8080/tienda1/miembros/imagenes/za... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:24,534 - INFO - Processed 1000/12213 requests...
+2025-08-29 20:37:24,534 - INFO - Request 1000: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:24,785 - INFO - Request 30700: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:24,790 - INFO - Request 54300: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: BLOCK | Got: ALLOW | Confidence: 0.400 | ❌
+2025-08-29 20:37:24,961 - INFO - Request 36300: POST http://localhost:8080/tienda1/miembros/editar.jsp ... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:25,001 - INFO - Request 59800: GET http://localhost:8080/tienda1/global/creditos.jsp/... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:25,132 - INFO - Request 12800: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,243 - INFO - Request 26700: GET http://localhost:8080/tienda1/miembros/imagenes/za... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,333 - INFO - Request 10600: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,373 - INFO - Processed 15000/12213 requests...
+2025-08-29 20:37:25,374 - INFO - Request 15000: GET http://localhost:8080/tienda1/miembros/imagenes/za... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,416 - INFO - Request 25300: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,432 - INFO - Request 57900: POST http://localhost:8080/tienda1/publico/anadir.jsp H... | Expected: BLOCK | Got: ALLOW | Confidence: 0.400 | ❌
+2025-08-29 20:37:25,569 - INFO - Request 47400: GET http://localhost:8080/tienda1/publico/anadir.jsp?i... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:25,589 - INFO - Request 35900: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,711 - INFO - Request 37800: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:25,766 - INFO - Request 13600: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,770 - INFO - Request 36400: GET http://localhost:8080/asf-logo-wide.gif/.old HTTP/... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:25,802 - INFO - Request 16300: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,857 - INFO - Request 28800: GET http://localhost:8080/tienda1/index.jsp HTTP/1.1... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:25,899 - INFO - Request 37200: POST http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:26,053 - INFO - Request 1400: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:26,096 - INFO - Request 8500: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:26,209 - INFO - Processed 50000/12213 requests...
+2025-08-29 20:37:26,209 - INFO - Request 50000: GET http://localhost:8080/tienda1/publico/pagar.jsp?mo... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:26,566 - INFO - Request 12900: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:26,611 - INFO - Request 56400: POST http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:26,622 - INFO - Request 11300: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:26,892 - INFO - Request 55200: GET http://localhost:8080/tienda1/publico/pagar.jsp?mo... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:26,988 - INFO - Request 52800: GET http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 1.000 | ✅
+2025-08-29 20:37:27,018 - INFO - Request 11500: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:27,076 - INFO - Processed 7000/12213 requests...
+2025-08-29 20:37:27,076 - INFO - Request 7000: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:27,184 - INFO - Request 28600: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:27,198 - INFO - Request 15400: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:27,223 - INFO - Request 31700: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:27,736 - INFO - Request 55700: GET http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 1.000 | ✅
+2025-08-29 20:37:27,787 - INFO - Request 14200: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:27,801 - INFO - Processed 51000/12213 requests...
+2025-08-29 20:37:27,803 - INFO - Request 51000: POST http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:28,058 - INFO - Request 54100: GET http://localhost:8080/tienda1/publico/caracteristi... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:28,323 - INFO - Request 14700: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:28,331 - INFO - Request 20200: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:28,382 - INFO - Request 29800: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:28,494 - INFO - Request 18200: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:28,517 - INFO - Request 24200: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:28,593 - INFO - Request 6100: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:28,650 - INFO - Request 19400: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:28,698 - INFO - Request 14300: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:28,814 - INFO - Request 800: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:28,833 - INFO - Request 45600: GET http://localhost:8080/tienda1/miembros/editar.jsp.... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:28,886 - INFO - Request 30200: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:29,012 - INFO - Request 51800: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: BLOCK | Got: BLOCK | Confidence: 1.000 | ✅
+2025-08-29 20:37:29,097 - INFO - Request 10500: GET http://localhost:8080/tienda1/miembros/imagenes/za... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:29,310 - INFO - Request 55900: POST http://localhost:8080/tienda1/publico/caracteristi... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:29,358 - INFO - Request 48300: GET http://localhost:8080/tienda1/miembros/fotos.jsp/.... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:29,406 - INFO - Request 46700: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:29,675 - INFO - Request 8400: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:29,698 - INFO - Request 11100: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:29,744 - INFO - Request 19200: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:29,754 - INFO - Request 34500: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:29,794 - INFO - Processed 27000/12213 requests...
+2025-08-29 20:37:29,796 - INFO - Request 27000: GET http://localhost:8080/tienda1/index.jsp HTTP/1.1... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:29,898 - INFO - Request 43300: POST http://localhost:8080/tienda1/publico/anadir.jsp H... | Expected: BLOCK | Got: ALLOW | Confidence: 0.400 | ❌
+2025-08-29 20:37:29,940 - INFO - Request 52400: POST http://localhost:8080/tienda1/publico/anadir.jsp H... | Expected: BLOCK | Got: ALLOW | Confidence: 0.400 | ❌
+2025-08-29 20:37:30,177 - INFO - Request 54500: GET http://localhost:8080/tienda1/publico/pagar.jsp?mo... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:30,251 - INFO - Request 15500: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:30,266 - INFO - Request 48900: GET http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:30,380 - INFO - Request 47800: GET http://localhost:8080/asf-logo-wide.gif.old HTTP/1... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:30,451 - INFO - Request 47100: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: BLOCK | Got: BLOCK | Confidence: 0.600 | ✅
+2025-08-29 20:37:30,526 - INFO - Request 21100: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:30,728 - INFO - Processed 39000/12213 requests...
+2025-08-29 20:37:30,729 - INFO - Request 39000: GET http://localhost:8080/iisadmpwd/aexp2b.htr HTTP/1.... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:31,278 - INFO - Request 30400: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:31,671 - INFO - Processed 2000/12213 requests...
+2025-08-29 20:37:31,672 - INFO - Request 2000: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:31,739 - INFO - Request 60600: GET http://localhost:8080/tienda1.java HTTP/1.1... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:31,986 - INFO - Request 13800: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:32,113 - INFO - Request 18500: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:32,212 - INFO - Request 16700: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:32,452 - INFO - Request 1900: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:32,485 - INFO - Request 44500: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:32,532 - INFO - Request 49200: GET http://localhost:8080/tienda1/miembros/editar.jsp?... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:32,558 - INFO - Request 11900: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:32,706 - INFO - Request 14500: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:32,902 - INFO - Request 26600: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:33,042 - INFO - Request 29200: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:33,201 - INFO - Request 32900: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:33,417 - INFO - Request 7100: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:33,598 - INFO - Request 40700: GET http://localhost:8080/tienda1/miembros/editar.jsp?... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:33,749 - INFO - Processed 21000/12213 requests...
+2025-08-29 20:37:33,750 - INFO - Request 21000: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:33,825 - INFO - Request 41700: GET http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:33,875 - INFO - Request 6400: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:33,951 - INFO - Request 7200: GET http://localhost:8080/tienda1/index.jsp HTTP/1.1... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:34,024 - INFO - Request 31900: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:34,481 - INFO - Request 55500: GET http://localhost:8080/tienda1/publico/caracteristi... | Expected: BLOCK | Got: ALLOW | Confidence: 0.300 | ❌
+2025-08-29 20:37:34,746 - INFO - Request 25200: GET http://localhost:8080/tienda1/index.jsp HTTP/1.1... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:34,889 - INFO - Request 56300: GET http://localhost:8080/tienda1/publico/pagar.jsp?mo... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:34,898 - INFO - Request 59600: PUT http://localhost:8080/tienda1/miembros/editar.jsp ... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:34,940 - INFO - Request 58900: GET http://localhost:8080/tienda1/asf-logo-wide.gif/.O... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:35,031 - INFO - Processed 12000/12213 requests...
+2025-08-29 20:37:35,032 - INFO - Request 12000: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:35,051 - INFO - Request 41900: POST http://localhost:8080/tienda1/publico/registro.jsp... | Expected: BLOCK | Got: BLOCK | Confidence: 1.000 | ✅
+2025-08-29 20:37:35,321 - INFO - Request 51100: GET http://localhost:8080/tienda1/publico/caracteristi... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:35,334 - INFO - Request 13400: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:35,359 - INFO - Request 26100: GET http://localhost:8080/tienda1/index.jsp HTTP/1.1... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:36,013 - INFO - Request 48500: GET http://localhost:8080/tienda1/publico/autenticar.j... | Expected: BLOCK | Got: BLOCK | Confidence: 1.000 | ✅
+2025-08-29 20:37:36,064 - INFO - Request 11400: GET http://localhost:8080/tienda1/miembros/imagenes/za... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:36,256 - INFO - Request 11200: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:36,357 - INFO - Request 26800: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:36,384 - INFO - Request 31800: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:36,414 - INFO - Request 22500: GET http://localhost:8080/tienda1/index.jsp HTTP/1.1... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:36,434 - INFO - Request 23700: POST http://localhost:8080/tienda1/publico/pagar.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:36,492 - INFO - Request 58600: POST http://localhost:8080/tienda1/publico/vaciar.jsp H... | Expected: BLOCK | Got: BLOCK | Confidence: 1.000 | ✅
+2025-08-29 20:37:36,534 - INFO - Request 40400: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: BLOCK | Got: ALLOW | Confidence: 0.200 | ❌
+2025-08-29 20:37:36,646 - INFO - Request 59100: POST http://localhost:8080/tienda1/miembros/editar.jsp ... | Expected: BLOCK | Got: BLOCK | Confidence: 0.900 | ✅
+2025-08-29 20:37:37,065 - INFO - Request 2900: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:37,087 - INFO - Request 48800: GET http://localhost:8080/tienda1/publico/caracteristi... | Expected: BLOCK | Got: ALLOW | Confidence: 0.300 | ❌
+2025-08-29 20:37:37,106 - INFO - Request 3700: GET http://localhost:8080/tienda1/miembros/fotos.jsp H... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:37,169 - INFO - Processed 14000/12213 requests...
+2025-08-29 20:37:37,171 - INFO - Request 14000: GET http://localhost:8080/tienda1/imagenes/3.gif HTTP/... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:37,184 - INFO - Request 25900: GET http://localhost:8080/tienda1/publico/vaciar.jsp?B... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:37,199 - INFO - Request 28700: GET http://localhost:8080/tienda1/publico/entrar.jsp?e... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:37,368 - INFO - Request 18400: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:37,410 - INFO - Request 29700: GET http://localhost:8080/tienda1/index.jsp HTTP/1.1... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:37,585 - INFO - Request 35500: POST http://localhost:8080/tienda1/publico/autenticar.j... | Expected: ALLOW | Got: ALLOW | Confidence: 0.400 | ✅
+2025-08-29 20:37:37,593 - INFO - Request 25400: GET http://localhost:8080/tienda1/global/titulo.jsp HT... | Expected: ALLOW | Got: ALLOW | Confidence: 0.200 | ✅
+2025-08-29 20:37:37,597 - INFO - Generating comprehensive charts...
+2025-08-29 20:37:39,897 - INFO - ================================================================================
+2025-08-29 20:37:39,897 - INFO - REAL DATASET TESTING COMPLETED - FIXED VERSION
+2025-08-29 20:37:39,897 - INFO - Final Accuracy: 67.18%
+2025-08-29 20:37:39,898 - INFO - Total Requests: 12,213
+2025-08-29 20:37:39,898 - INFO - Correct Decisions: 8,205
+2025-08-29 20:37:39,898 - INFO - ================================================================================

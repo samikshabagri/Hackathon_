@@ -1,0 +1,22 @@
+{
+  "model_type": "LogisticRegression",
+  "accuracy": 0.6971260132645541,
+  "auc": 0.7342823788787177,
+  "feature_columns": [
+    "url_length",
+    "body_length",
+    "num_params",
+    "count_'",
+    "count_\"",
+    "count_<",
+    "count_>",
+    "count_;",
+    "count_%",
+    "has_sql",
+    "has_xss",
+    "has_command",
+    "has_path_traversal",
+    "has_comment"
+  ],
+  "training_date": "2025-08-28T16:49:38.083303"
+}
