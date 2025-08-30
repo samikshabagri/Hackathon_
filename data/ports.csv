@@ -1,0 +1,45 @@
+code,name,country,region,lat,lon,eca_flag
+BRSSZ,Santos,BR,SA,21.03,57.18,False
+BRVIX,Vitoria,BR,SA,-26.49,72.58,False
+ARBAI,Bahia Blanca,AR,SA,27.48,70.17,False
+USGDX,Galveston,US,NA,-32.59,18.3,True
+USNOL,New Orleans,US,NA,0.9,-60.92,True
+CARTG,Cartagena,CO,SA,-17.76,17.01,False
+MXVER,Veracruz,MX,NA,34.29,-27.85,False
+CLVAP,Valparaiso,CL,SA,42.97,40.08,False
+VEPRC,Puerto Cabello,VE,SA,36.04,23.96,False
+ESLPA,Las Palmas,ES,EU,9.92,56.34,False
+NLRTM,Rotterdam,NL,EU,52.8,28.2,True
+GBFXT,Felixstowe,GB,EU,12.87,52.44,True
+DEHAM,Hamburg,DE,EU,33.75,-64.19,True
+ITGIT,Gioia Tauro,IT,EU,11.57,25.95,False
+GRPIR,Piraeus,GR,EU,52.17,28.57,False
+ZACPT,Cape Town,ZA,AF,6.83,131.68,False
+NGAPP,Apapa,NG,AF,5.06,-40.21,False
+EGSUZ,Suez,EG,AF,-18.31,-59.06,False
+AEJEA,Jebel Ali,AE,ME,-39.94,15.03,False
+OMSOH,Sohar,OM,ME,36.92,81.36,False
+INMUN,Mundra,IN,AS,-36.79,45.4,False
+INPAR,Paradip,IN,AS,-24.57,127.04,False
+INHAL,Haldia,IN,AS,-23.26,57.86,False
+SAJED,Jeddah,SA,ME,-7.38,61.14,False
+SGSIN,Singapore,SG,AS,1.23,87.12,False
+MYTPP,Tanjung Pelepas,MY,AS,-16.93,119.27,False
+CNSHA,Shanghai,CN,AS,10.02,86.34,True
+CNTAO,Qingdao,CN,AS,44.97,139.74,False
+CNGZG,Guangzhou,CN,AS,-17.61,-16.88,True
+KRPUS,Busan,KR,AS,-14.96,-22.17,False
+JPTYO,Tokyo,JP,AS,18.24,138.57,True
+JPOKA,Osaka,JP,AS,59.03,35.89,True
+IDSUB,Surabaya,ID,AS,23.9,109.19,False
+VNHPH,Haiphong,VN,AS,53.29,-35.15,False
+BDKHL,Chittagong,BD,AS,12.85,103.22,False
+PHMNL,Manila,PH,AS,-9.68,16.76,False
+AUSYD,Sydney,AU,OC,58.56,136.71,False
+AUMEL,Melbourne,AU,OC,50.61,95.66,False
+AUPHE,Port Hedland,AU,OC,-13.09,-9.41,False
+BRSFS,Sao Francisco do Sul,BR,SA,14.73,43.37,False
+USCHA,Charleston,US,NA,10.55,60.07,False
+USNYC,New York,US,NA,0.83,84.82,True
+CAAQW,Quebec,CA,NA,-6.65,-7.25,True
+PAONX,Colon (Panama),PA,NA,-27.28,-38.48,False

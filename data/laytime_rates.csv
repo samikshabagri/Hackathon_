@@ -1,0 +1,10 @@
+commodity,allowed_hours,demurrage_usd_per_day,despatch_usd_per_day
+Soybeans,144,50000,25000
+Corn,132,42000,21000
+Coal,120,38000,19000
+Iron Ore,108,60000,30000
+Bauxite,120,36000,18000
+Fertilizer,150,40000,20000
+Sugar,138,34000,17000
+Cement,156,32000,16000
+Grain,144,45000,22500
